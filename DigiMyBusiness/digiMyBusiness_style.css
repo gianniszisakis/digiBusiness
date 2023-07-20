@@ -1,0 +1,330 @@
+/* Divider CSS*/
+.wrapper
+{
+	padding-bottom: 90px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 50px;
+    margin-bottom: 50px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: white;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+
+
+ /* services */
+.title {color: #0d6efd;margin-bottom: 30px;position: relative;}
+
+.services {
+  padding:40px;
+  position: relative;
+}
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color:#0d6efd;
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa;
+}
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px;
+}
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  content: '';
+}
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:black;
+  content: '';
+  transform: rotate(90deg);
+}
+.services .serv .num
+ {
+   width: 60px;
+   height: 60px;
+   background-color: #0d6efd;
+   box-shadow: 0px 0px 15px 0px #00a9d3;
+   margin: -38px auto 15px auto;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 30px;
+    padding-top: 7px;
+    border: 1px dashed;
+  }
+.services .serv h5 {color: white;}
+.services .serv p {color: black;}
+.services .serv hr {
+  width: 30px;
+  border-top: 3px solid #0d6efd;
+}
+
+/*Price Table CSS*/
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 586px;
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 20%);
+}
+
+.title_Cost{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+
+.standard .title_Cost{
+    background: #0d6efd;
+}
+
+.view{
+    display: block;
+    width: 100%;
+    padding: 30px 0 20px;
+    background: whitesmoke;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon img{
+    width: 100px;
+}
+
+.cost{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.amount{
+    font-size: 2.8em;
+    font-weight: bolder;
+}
+
+.detail{
+    margin: auto 0 auto 5px;
+    width: 70px;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 15px;
+    color: #7D7C7C;
+}
+
+.description{
+    margin: 30px auto;
+    font-size: 0.8em;
+    color: #7D7C7C;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 10px;
+}
+
+li::before{
+    content: "";
+    background-image: url("https://i.postimg.cc/ht7g996V/check.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+/* Responsiveness:Start */
+@media screen and (max-width:970px) {
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .standard, .business{
+        margin-top: 25px;
+    }
+}
+/* Responsiveness:End */
+
+
+/*Flip Card*/
+.flipper {
+    position: relative;
+  }
+  
+  .flipper {
+    perspective: 600px;
+    -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+    
+    -webkit-transform-origin: 100% center;
+    -moz-transform-origin: 100% center;
+    -ms-transform-origin: 100% center;
+    transform-origin: 100% center;
+  }
+  
+  .front-card, .back-card {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    
+      -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+  
+    -o-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .front-card {
+      z-index: 2;
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  .flipper.flip .front-card {
+    -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  }
+  
+  .back-card {
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+  }
+  
+  .flipper.flip .back-card {
+    -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+     transform: rotateY(0deg);
+  }
+  
+  /*Styling Flip Card*/
+  .header-front {
+    background: #0d6efd;
+  }
+  
+  .header-back {
+    background: YellowGreen;
+  }
+  
+  .card {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  .card span.card-title {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+  }
+  
+  .card .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .card .card-image .header-front, .card .card-image .header-back {
+    border-radius: 2px 2px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    z-index: -1;
+    width: 500px;
+    height: 150px;
+  }
+  .card .card-image span.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+  }
+  .card .card-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+  }
+  .card .card-content p {
+    margin: 0;
+    color: inherit;
+  }
+  .card .card-content span.card-title {
+    line-height: 48px;
+  }
+  /*Flip card end*/
+
+
+  
