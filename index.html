@@ -9,6 +9,37 @@
 </head>
 <body>
 
+    <!--Menu-->
+    <span class='svg-container ham-svg neu-shadow'>
+        <svg viewBox="0 0 100 80">
+          <rect id='top' x='15' width="70" height="10"></rect>
+          <rect id='middle' x='15' y="30" width="70" height="10"></rect>
+          <rect id='bottom' x='15' y="60" width="70" height="10"></rect>
+        </svg>
+      </span>
+      <div class='nav collapsed flex-centered'>
+        <ul> 
+          <li class='navbar-link flex-centered neu-shadow collapsed'>
+            <i class='fas fa-home fa-2x'></i>
+            <span>Home</span>
+          </li>
+          <li class='navbar-link flex-centered neu-shadow collapsed'>
+            <i class='fa fa-info fa-2x'></i>
+            <span>About</span>
+          </li>
+          <li class='navbar-link flex-centered neu-shadow collapsed'>
+            <i class='fa fa-phone fa-2x'></i>
+            <span>Contact</span>
+          </li>
+          <li class='navbar-link flex-centered neu-shadow collapsed'>
+            <i class='far fa-laugh-beam fa-2x'></i>
+            <span>Dance</span>
+          </li>
+        </ul>
+      </div>
+    <!---->
+
+
     <section class="slide-wrapper">
         <div class="container">
             <div id="myCarousel" class="carousel slide">
@@ -22,7 +53,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item item1 active">
-                        <div class="fill" style=" background-color:#0d6efd;">
+                        <div class="fill" style=" background-image:url(https://pixabay.com/get/gff1ab3f86088ce04ccab92059dc6d055dafeb1d8248c698e441249b72580be149707369f7773fe1a7fcdfdace8608c6b0c5f42c99ba4b4262977ee53d90777b7_1280.jpg)";>
                             <div class="inner-content">
                                 <div class="carousel-img">
                                     <img src="https://gianniszisakis.github.io/digiBusiness/photos/googleBusinessAccount.jpg" alt="digiMyBusiness" class="img img-responsive" />
@@ -83,5 +114,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script>
+        $('.svg-container.ham-svg').on('click', function(){
+        $("#top").toggleClass('top-collapsed');
+        $("#bottom").toggleClass('bottom-collapsed');
+        $('div.nav').toggleClass('collapsed');
+        $('.navbar-link').toggleClass('collapsed');
+        
+        });
+    </script>
 </body>
 </html>
