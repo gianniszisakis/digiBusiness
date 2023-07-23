@@ -91,12 +91,13 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
   .item .carousel-desc , .item.item3 .carousel-desc{text-align:center;}
   .item .carousel-desc p {width:80%;}
   .item3 .col-md-6{width:100%; text-align:center;}
+  .item .carousel-desc {font-size: 20px;}
 }
 @media(max-width:768px)
 {
 .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
 .item  h2{font-size:30px; margin-top:0px;}
-.item .carousel-desc p{width:100%; font-size:12px;}
+.item .carousel-desc p{width:100%; font-size:18px;}
 }
 @media(max-width:480px)
 {
