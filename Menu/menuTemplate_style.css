@@ -38,6 +38,9 @@ body {
 	width: auto;
 	margin: 0 auto;
 }
+.nav{
+	justify-content: center;
+}
 .nav-tabs .nav-item {
 	margin-bottom: -1px;
 }
