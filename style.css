@@ -81,7 +81,7 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
 .item3 .col-md-6{float:none; display:inline-block; vertical-align:middle; width:49%;}
 
 .item3.active .carousel-img img.animated{visibility:visible; opacity:1; transition:all 0.3s ease; animation-duration:2s; animation-delay:0.3s}
-.item3 h2 , item3.active h2{visibility:hidden; opacity:0; transition:all 5s ease; }
+.item3 h2 , item3.active h2{visibility:hidden; opacity:0; transition:all 5s ease; color: #fff;}
 .item.item3 .carousel-desc{text-align:left;}
 .item3.active h2.animated{visibility:visible; opacity:1;  animation-delay:1.5s}
 .item3 p , item3.active p{visibility:hidden; opacity:0; transition:all 5s ease; width:100%;  }
