@@ -84,3 +84,13 @@ body {
 	color: burlywood;
 	font-style: italic;
 }
+
+@media screen and (max-width: 993px) {
+	.single_menu_list {
+		position: relative;
+		padding-left: 150px;
+		margin-bottom: 110px;
+	}
+
+
+}
