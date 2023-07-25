@@ -72,6 +72,19 @@ body {
     width: 15%;
   }
   
+  span {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 390px) {
+    .item p {
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+
   /* FOOTER */
   
   footer {
@@ -98,6 +111,5 @@ body {
     color: brown;
   }
 
-  span {
-    font-size: 12px;
-  }
+
+
