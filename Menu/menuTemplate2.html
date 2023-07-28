@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menuTemplate2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Menu Template 2</title>
 </head>
 <body>
@@ -13,9 +14,22 @@
         <!--<p class="established"> Est. 2019 </p>-->
         <img src="https://st2.depositphotos.com/53329082/48082/v/450/depositphotos_480828574-stock-illustration-fresh-coffee-vector-icon-illustration.jpg" class="img-thumbnail rounded mx-auto d-block" alt="" width="100px" height="100px">
         <hr>
+        
+        <!--Navbar-->
+        <div class="topnav" id="myTopnav">
+          <a href="#coffee_tab" class="active">Καφές</a>
+          <a href="#sfoliates">Ζεστή Γωνιά - Σφολιάτες</a>
+          <a href="#rofimata">Ροφήματα</a>
+          <a href="#tsai">Τσάι</a>
+          <a href="#sandwich">Σάντουιτς</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <!---->
 
         <!--1st tab-->
-        <section>
+        <section id="coffee_tab">
           <h2>Καφές</h2>
           <img src="https://www.freeiconspng.com/thumbs/coffee-icon-png/coffee-icon-png-1.png" alt="coffee icon" width="100px" height="100px"/>
           <article class="item">
@@ -76,7 +90,7 @@
         <!---->
 
         <!--2nd tab-->
-        <section>
+        <section id="sfoliates">
           <h2>Ζεστή Γωνιά - Σφολιάτες</h2>
           <img src="https://www.ioniki.com/sites/default/files/styles/600px/public/2021-05/00-01-103-%CE%A3%CE%A6%CE%9F%CE%9B%CE%99%CE%91%CE%A4%CE%91-%CE%9C%CE%95-%CE%91%CE%9B%CE%9B%CE%91%CE%9D%CE%A4%CE%99%CE%9A%CE%9F-%26-%CE%9A%CE%99%CE%A4%CE%A1%CE%99%CE%9D%CE%9F-%CE%A4%CE%A5%CE%A1%CE%99-215g.jpg?itok=NtdXm-In" width="150px" height="100px"/>
           <article class="item">
@@ -107,7 +121,7 @@
         <!---->
 
         <!--3 tab-->
-        <section>
+        <section id="rofimata">
           <h2>Ροφήματα</h2>
           <img src="https://static.vecteezy.com/system/resources/previews/005/242/333/original/cup-of-cocoa-with-straiped-straw-flat-style-seasonal-winter-drink-cup-of-hot-chocolate-with-pipe-icon-for-logo-sticker-print-recipe-menu-cafe-decor-and-decoration-free-vector.jpg" width="100px" height="100px"/>
           <article class="item">
@@ -120,7 +134,7 @@
         <!---->
 
         <!--4 tab-->
-        <section>
+        <section id="tsai">
           <h2>Τσάι</h2>
           <img src="https://icons.veryicon.com/png/o/food--drinks/spring-new-food-series/tea-12.png" width="100px" height="100px"/>
           <article class="item">
@@ -139,7 +153,7 @@
         <!---->
 
         <!--5 tab-->
-        <section>
+        <section id="sandwich">
           <h2>Σάντουιτς</h2>
           <img src="https://cdn.icon-icons.com/icons2/1447/PNG/512/32386sandwich_98891.png" width="100px" height="100px"/>
           <article class="item">
@@ -162,6 +176,19 @@
         </p>
         <p class="address">Your location</p>
       </footer>
-      </div>    
+      </div>
+      
+      <!--Navbar menu script-->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+      <!---->
 </body>
 </html>
