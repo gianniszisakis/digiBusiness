@@ -95,3 +95,19 @@ body {
 		margin-bottom: 110px;
 	}
 }
+
+/*Footer CSS*/
+
+.footer{
+	background-color: burlywood!important;
+}
+
+.fa {
+	font-size: 20px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
+
+  
