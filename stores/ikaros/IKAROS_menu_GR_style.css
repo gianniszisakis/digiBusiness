@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: #333;
 	line-height: 1.6;
+	background-color: #F6F4EB;
 }
 .mb-60 {
 	margin-bottom: 60px;
@@ -14,7 +15,7 @@ body {
 .section-title h4 {
 	font-size: 40px;
 	text-transform: capitalize;
-	color: #FF5E18;
+	color: #91C8E4;
 	position: relative;
 	display: inline-block;
 	padding-bottom: 25px;
@@ -29,7 +30,7 @@ body {
 .section-title h4::before, .section-title h4::after {
 	position: absolute;
 	content: "";
-	background-color: #FF5E18;
+	background-color: #91C8E4;
 }
 #myTabContent {
 	margin-top: 50px;
@@ -49,8 +50,8 @@ body {
 }
 .menu_tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
 	color: white;
-	background-color: brown;
-	border-color: brown;
+	background-color: #91C8E4;
+	border-color: #91C8E4;
 }
 .single_menu_list {
 	position: relative;
@@ -61,7 +62,7 @@ body {
 .single_menu_list img {
 	max-width: 30%;
 	position: absolute;
-	left: 0px;
+	left: 10px;
 	top: 0;
 	border: 1px solid #ddd;
 	padding: 3px;
@@ -84,7 +85,7 @@ body {
 .single_menu_list h4 span {
 	float: right;
 	font-weight: bold;
-	color: burlywood;
+	color: #91C8E4;
 	font-style: italic;
 }
 
@@ -99,7 +100,7 @@ body {
 /*Footer CSS*/
 
 .footer{
-	background-color: burlywood!important;
+	background-color: #91C8E4!important;
 }
 
 .fa {
