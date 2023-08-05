@@ -55,7 +55,7 @@ body {
 }
 .single_menu_list {
 	position: relative;
-	padding-left: 140px; /* change value in order to fix mobile view*/
+	padding-left: 100px; /* change value in order to fix mobile view*/
 	margin-bottom: 110px;
 }
 
