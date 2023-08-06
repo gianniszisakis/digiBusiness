@@ -60,7 +60,7 @@ body {
 }
 
 .single_menu_list img {
-	max-width: 25%;
+	max-width: 10%;
 	position: absolute;
 	left: 10px;
 	top: 0;
@@ -89,17 +89,17 @@ body {
 	font-style: italic;
 }
 
-/*media query
+/*media query */
 
-@media screen and (max-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
 	.single_menu_list {
 		position: relative;
-		padding-left: 120px;
+		padding-left: 190px;
 		margin-bottom: 110px;
 	}
 }
 
-*/
+
 
 /*Footer CSS*/
 
