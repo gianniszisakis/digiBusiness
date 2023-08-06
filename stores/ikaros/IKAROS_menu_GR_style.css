@@ -55,7 +55,7 @@ body {
 }
 .single_menu_list {
 	position: relative;
-	padding-left: 100px; /* change value in order to fix mobile view*/
+	padding-left: 150px; /* change value in order to fix mobile view*/
 	margin-bottom: 110px;
 }
 
@@ -89,7 +89,17 @@ body {
 	font-style: italic;
 }
 
-/*media query*/
+/*media query
+
+@media screen and (max-width: 993px) {
+	.single_menu_list {
+		position: relative;
+		padding-left: 120px;
+		margin-bottom: 110px;
+	}
+}
+
+*/
 
 /*Footer CSS*/
 
